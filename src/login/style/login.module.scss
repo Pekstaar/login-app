@@ -54,9 +54,22 @@ $dark: rgb(12, 11, 11);
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  
+  margin:  3rem 0;
 }
 .input{
-  width: 55%;
-  margin-left: 20px;
+  width: 50%;
+  margin-left: 1rem;
+}
+.btn{
+  background: #c90028;
+  width:40%;
+  height: 3rem;
+}
+.btn:hover{
+  background-color: #e4153e;
+  
+}
+.typo{
+  width: 50%;
+  background: #000;
 }
