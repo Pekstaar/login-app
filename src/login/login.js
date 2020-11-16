@@ -1,4 +1,11 @@
-import { Grid, Paper, TextField } from "@material-ui/core";
+import {
+  Button,
+  Avatar,
+  Grid,
+  Paper,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import React from "react";
 import styles from "./style/login.module.css";
 
@@ -12,10 +19,41 @@ const Login = () => {
               <h3>Login</h3>
 
               <form action="">
-                <div className={styles.icon}>
-                <i class="fas fa-user"></i>
+                <div className={styles.inputGroup}>
+                  <Avatar>
+                    <i class="fas fa-user"></i>
+                  </Avatar>
+                  <TextField
+                    className={styles.input}
+                    id="standard-basic"
+                    label="Email"
+                    required="true"
+                  />
                 </div>
-                <TextField className={styles.input} id="standard-basic" label="Email" />
+                <div className={styles.inputGroup}>
+                  <Avatar>
+                    <i class="fas fa-user"></i>
+                  </Avatar>
+                  <TextField
+                    className={styles.input}
+                    id="filled-password-input"
+                    label="Password"
+                    type="password"
+                    autoComplete="current-password"
+                    required="true"
+                    color="#c90028"
+                  />
+                </div>
+                <Button
+                  className={styles.btn}
+                  variant="contained"
+                  color="secondary"
+                >
+                  Login
+                </Button>
+                <div className={styles.typo}>
+                  <Typography>Have no account? </Typography>
+                </div>
               </form>
             </Paper>
           </Grid>

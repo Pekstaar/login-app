@@ -39,10 +39,37 @@ $dark: rgb(12, 11, 11);
   height:85%;
   margin: 5% 15%;
 }
-.input{
-  width: 65%;
-}
+
  h3{
   text-transform: uppercase;
   padding: 1em 0;
+}
+.icon{
+  
+  background: rgb(228, 228, 228);
+  width:1em;
+}
+.inputGroup{
+  display: flex ;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin:  3rem 0;
+}
+.input{
+  width: 50%;
+  margin-left: 1rem;
+}
+.btn{
+  background: #c90028;
+  width:40%;
+  height: 3rem;
+}
+.btn:hover{
+  background-color: #e4153e;
+  
+}
+.typo{
+  width: 50%;
+  background: #000;
 }
